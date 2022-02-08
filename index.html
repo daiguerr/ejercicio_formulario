@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Informacion Alta Telefonica</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form class="container" id="form">
+        <h1 style="text-align: center;">Formulario Informacion Alta Telefonica</h1>
+        <div class="datos">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="inputs">
+                    <label>Nombre:<input type="text" maxlength="30" class="input_espacio"></label>
+                    <label>Apellidos:<input type="text" maxlength="60" class="input_espacio"></label>
+                    <label>Direccion:<input type="text" maxlength="60" class="input_espacio"></label>
+                    <label>Codigo Postal:<input type="text" class="input_espacio" id="entradacp"></label>
+                    <div class="error"></div>
+                    <label>Localidad:<input type="text" class="input_espacio" id="salidaprovincia"></label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="contratacion">
+            <fieldset>
+                <legend>Tipo de Contratacion</legend>
+                <div class="input_radio">
+                    <input type="radio" checked><label> Nueva Contratacion</label>
+                    <input type="radio"><label> Portabilidad</label>
+                    <input type="radio"><label>  Cambio de Contratacion</label>
+                </div>
+                <div class="telefonia">
+                    <label>Elija la compañia actual:
+                        <select name="telefonia">
+                            <option>Movistar</option>
+                            <option>Orange</option>
+                            <option>Vodafone</option>
+                            <option>Yoigo</option>
+                            <option>No Tengo Ninguna Compañia</option>
+                        </select>
+                    </label>
+                    <label>En caso de portabilidad, elija la nueva compañia:
+                        <select name="telefonia2">
+                            <option>Movistar</option>
+                            <option>Orange</option>
+                            <option>Vodafone</option>
+                            <option>Yoigo</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="bancario">
+            <fieldset>
+                <legend>Datos Bancarios</legend>
+                <div class="labels">
+                    <label>Pais: <input type="text" placeholder="ES" disabled class="input_espacio" id="inputEspacio"> (solo valido ES)</label>
+                    <label>Control IBAN: <input type="text" placeholder="XX" maxlength="2" class="input_espacio" id="inputEspacio2"> (dos
+                        digitos)</label>
+                    <label>Entidad: 
+                    <input type="text" placeholder="XXXX" maxlength="4" class="input_espacio" id="inputEspacio3"></input> (cuatro
+                        digitos)</label>
+                    <label>Sucursal: <input type="text" placeholder="XXXX" maxlength="4" class="input_espacio" id="inputEspacio4"> (cuatro
+                        digitos)</label>
+                    <label>DC: <input type="text" placeholder="XX" maxlength="2" class="input_espacio" id="inputEspacio5"> (dos
+                        digitos)</label>
+                    <label>Cuenta: <input type="text" placeholder="XXXXXXXXXX" maxlength="10" class="input_espacio" id="inputEspacio6">
+                        (dos digitos)</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="estadistica">
+            <fieldset>
+                <legend>Datos Estadisticos - Como nos conocio</legend>
+                <div class="chechbox">
+                    <input type="checkbox"><label> A traves de la TV</label><br>
+                    <input type="checkbox"><label> A traves de la radio</label><br>
+                    <input type="checkbox" ><label> A traves de la internet</label><br>
+                    <input type="checkbox"><label> Otros</label>
+                </div>
+                <div class="range">
+                    <input type="range" id="range" min="1" max="5" style="margin:30px 10px 10px 10px"><label
+                        style="margin-left: 20px;"> Valoracion [1-5]</label>
+                </div>
+                <div class="date" style="margin: 15px;">
+                    <label>Fecha de la Encuesta: <input type="date" value="2019-01-01" placeholder="2019-01-01" id="date"></label>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <div class="buttons">
+        <button class="button_dato">Enviar Datos</button>
+        <button class="button_dato">Borrar Datos</button>
+    </div>
+    <div class="buttons">
+        <button class="mostrar" value="valoracion" onclick="valoracion()">Mostrar Valoracion</button>
+        <button class="mostrar" value="cuenta" onclick="cuenta()">Mostrar Cuenta</button>
+        <button class="mostrar" onclick="diaSemana()">Mostrar Dia Semana</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;;
+}
+legend{
+    font-family: 'Poppins', sans-serif;;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    font-family:'Montserrat', sans-serif;;
+}
+.datos{
+    width: 90%;
+    height: 60%;
+    margin: 10px;
+}
+.contratacion{
+    width: 90%;
+    height: 60%;
+    margin: 10px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+.input_espacio{
+    margin: 5px 5px 5px 5px;
+}
+
+.input_espacio{
+    margin: 5px 5px 5px 5px;
+}
+
+.input_espacio.success input{
+    border-color: #09c372;
+}
+
+.input_espacio.error input{
+    border-color: #ff3860;
+}
+
+.input_espacio.error {
+    border-color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+.input_radio{
+    margin:5px 15px 15px 5px;
+    padding: 5px;
+}
+.telefonia{
+    margin: 5px;
+    padding: 5px 5px;
+}
+.bancario{
+    width: 90%;
+    height: 60%;
+    margin: 10px;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+.estadistica{
+    width: 90%;
+    height: 60%;
+    margin: 10px;
+}
+.chechbox{
+    margin: 5px;
+    padding: 5px;
+}
+.buttons{
+    margin: 10px;
+}
+.button_dato{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: pink;
+    border-color: rgb(238, 148, 163);
+}
+.mostrar{
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(255, 150, 167);
+    border-color: rgb(199, 132, 143);
+}
